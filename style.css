@@ -33,7 +33,7 @@ body {
 
 /* Estilo geral das seções */
 .section {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -120,6 +120,7 @@ body {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 20px;
+  margin-top: -700px;
 }
 
 /* Texto dos projetos */
@@ -445,9 +446,9 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* ============================
+/* 
    RESPONSIVIDADE PARA CELULAR
-   ============================ */
+ */
 @media (max-width: 768px) {
 
   /* Seções ocupam altura automática no mobile */
@@ -543,3 +544,4 @@ button:hover {
     padding: 0 10px;
   }
 }
+
