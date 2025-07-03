@@ -149,9 +149,9 @@ body {
   object-fit: contain;
   border-radius: 10px;
   display: block;
-  transform: translateX(-75px);
-  margin-top: 0;
+  margin-top: 150px;
   margin-bottom: 0;
+  
 }
 
 /* Container dos ícones tecnológicos */
@@ -549,10 +549,6 @@ button:hover {
   #projetcs {
     /* Exemplo: ajustar margens, padding, posição */
     margin-top: 20px; /* ou o que for necessário pra separar a imagem do título */
-  }
-
-  #projetcs h1 {
-    margin-top: 20px; /* subir o título pra longe da imagem */
   }
 
   .card img {
