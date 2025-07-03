@@ -1,0 +1,545 @@
+/* Importa fonte Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&display=swap');
+
+/* Reset básico e fonte padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilo do corpo da página */
+body {
+  background-color: #0f0f0f;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Vídeo de fundo fixo */
+#video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+/* Estilo geral das seções */
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 13px;
+}
+
+/* Título principal da home */
+.inicial .hero-content h1 {
+  font-weight: 900;
+  font-size: 5rem;
+  color: #000;
+  -webkit-text-stroke: 2px white;
+}
+
+/* Subtítulo da home */
+.inicial .hero-content h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 8%;
+}
+
+/* Container dos links sociais */
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Ícones dos links (GitHub, Insta, LinkedIn) */
+.links img {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid transparent; /* Borda invisível */
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efeito hover nos ícones */
+.links img:hover {
+  transform: scale(1.1);
+  background-color: transparent;
+}
+
+/* Títulos das seções sobre, habilidades e eu */
+.sobre h1,
+.habilidades h1,
+.eu h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Espaçamento topo para "sobre" */
+.sobre h1 {
+  margin-top: 20%;
+}
+
+/* Botão projeto */
+.buttonpj {
+  margin-top: 7%;
+}
+
+/* Espaçamento em habilidades */
+.hab {
+  margin-top: 7%;
+}
+
+/* Container dos projetos */
+.projetos {
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+}
+
+/* Título projetos */
+.projetos h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Texto dos projetos */
+.section.projetos p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+/* Card dos projetos */
+.card {
+  position: relative;
+  max-width: 90vw;
+  border-radius: 10px;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Imagem dentro do card */
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  display: block;
+  transform: translateX(-75px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Container dos ícones tecnológicos */
+.tech-icons {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Ícones tech */
+.tech-icons img {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s;
+}
+
+/* Zoom nos ícones tech ao passar o mouse */
+.tech-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Seção geral dos skills */
+.skills-section {
+  padding: 50px 20px;
+  background: transparent;
+  text-align: center;
+}
+
+/* Container dos ícones skills */
+.skills-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1%;
+  background: transparent;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  perspective: 1000px;
+}
+
+/* Ícone skill individual */
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  display: inline-block;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Zoom ícone skill no hover */
+.skill-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Container skill item */
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 120px;
+  margin: 15px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Zoom skill item no hover */
+.skill-item:hover {
+  transform: scale(1.1);
+}
+
+/* Título do skill */
+.skill-title {
+  font-size: 13px !important;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+/* Texto do skill */
+.skill-text {
+  font-size: 14px;
+}
+
+/* Zoom texto skill no hover */
+.skill-text:hover {
+  transform: scale(1.1);
+}
+
+/* Descrição skills */
+.skills-description {
+  max-width: 600px;
+  margin: 20px auto 0;
+  font-size: 18px;
+  line-height: 2;
+  text-align: center;
+  white-space: pre-line;
+}
+
+/* Seção "eu" espaçamento */
+.section.eu {
+  margin-top: 600px;
+  margin-bottom: 100px;
+}
+
+/* Container da seção eu */
+.eusobre {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Texto na seção eu */
+.eusobre p {
+  max-width: 600px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: justify;
+  white-space: normal;
+}
+
+/* Imagem na seção eu */
+.Lolo img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  transform: translateX(-85px);
+}
+
+/* Efeito fade-in inicial */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Mostrar fade-in */
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animação para subir */
+.animar-subir {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: transform, opacity;
+}
+
+/* Mostrar animação subir */
+.animar-subir.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animação flutuar skills */
+.flutuante .skill-item {
+  animation: flutuar 3s ease-in-out infinite;
+}
+
+/* Keyframes da flutuação */
+@keyframes flutuar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Formulário espaçamento */
+.form {
+  margin-top: 400px;
+  margin-bottom: 75px;
+}
+
+/* Título do formulário */
+.form h1 {
+  margin-top: 25%;
+  margin-bottom: 10%;
+}
+
+/* Texto do formulário */
+.form p {
+  max-width: 600px;
+  margin: 20px auto 0;
+  font-size: 16px;
+  line-height: 2;
+  text-align: center;
+  white-space: pre-line;
+}
+
+/* Container botão form */
+.botaof {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  transform: translateX(-100px);
+}
+
+/* Espaçamento da seção habilidades */
+.section.habilidades {
+  margin-top: 250px;
+  margin-bottom: 500px;
+}
+
+/* Estilo formulário */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* Inputs e textarea */
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Altura textarea */
+.formulario textarea {
+  height: 150px;
+  resize: none;
+}
+
+/* Botão do formulário */
+.formulario button {
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #0f0f0f;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover botão form */
+.formulario button:hover {
+  background-color: #ddd;
+}
+
+/* Container contato */
+.contat {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+/* Botões gerais */
+button {
+  background-color: transparent;
+  color: #00ffff;
+  border: 2px solid #00ffff;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  transition: all 0.3s ease;
+}
+
+/* Hover botão geral */
+button:hover {
+  background-color: #00ffff;
+  color: #000;
+  box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff, 0 0 60px #00ffff;
+  transform: scale(1.05);
+}
+
+/* ============================
+   RESPONSIVIDADE PARA CELULAR
+   ============================ */
+@media (max-width: 768px) {
+
+  /* Seções ocupam altura automática no mobile */
+  .section {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  /* Título principal menor e com menos contorno */
+  .inicial .hero-content h1 {
+    font-size: 2.8rem;
+    -webkit-text-stroke: 1px white;
+  }
+
+  /* Subtítulo menor */
+  .inicial .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Ícones das redes sociais menores */
+  .links img {
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+  }
+
+  /* Imagem do projeto ajustada ao centro e sem empurrar pro lado */
+  .card img {
+    transform: none;
+    width: 90%;
+  }
+
+  /* Imagem "quem sou eu" menor e centralizada */
+  .Lolo img {
+    max-width: 150px;
+    transform: none;
+    margin: 0 auto;
+  }
+
+  /* Seção "Quem sou eu" empilhada em coluna */
+  .eusobre {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Texto da bio um pouco menor */
+  .eusobre p {
+    font-size: 15px;
+  }
+
+  /* Ícones de habilidades em coluna */
+  .skills-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Cada card de skill ocupa 100% */
+  .skill-item {
+    width: 100%;
+  }
+
+  /* Botões centralizados e com espaçamento menor */
+  .buttonpj,
+  .hab,
+  .botaof,
+  .contat {
+    margin-top: 30px;
+    transform: none;
+  }
+
+  /* Inputs e textarea ocupam largura total */
+  .formulario input,
+  .formulario textarea {
+    max-width: 100%;
+  }
+
+  /* Título do formulário com margem menor */
+  .form h1 {
+    margin-top: 15%;
+    font-size: 1.5rem;
+  }
+
+  /* Texto do formulário menor */
+  .form p {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  /* Texto da seção de habilidades ajustado */
+  .skills-description {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+}
