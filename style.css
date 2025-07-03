@@ -446,164 +446,117 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* ================================
-   RESPONSIVIDADE PARA MOBILE (até 768px)
-   ================================ */
+/* 
+   RESPONSIVIDADE PARA CELULAR
+ */
 @media (max-width: 768px) {
 
-  /* Ajusta altura das seções para auto, não ficar gigante */
+  /* Seções ocupam altura automática no mobile */
   .section {
-    min-height: auto;
+    height: auto;
     padding: 40px 20px;
   }
 
-  /* Hero content menor e sem stroke exagerado */
+  /* Título principal menor e com menos contorno */
   .inicial .hero-content h1 {
     font-size: 2.8rem;
     -webkit-text-stroke: 1px white;
   }
 
+  /* Subtítulo menor */
   .inicial .hero-content h2 {
     font-size: 1.5rem;
-    margin-top: 5%;
   }
 
-  /* Links sociais ficam mais juntinhos e menores */
-  .links {
-    gap: 10px;
-  }
-
+  /* Ícones das redes sociais menores */
   .links img {
     width: 40px;
     height: 40px;
     padding: 6px;
   }
 
-  /* Projetos em coluna pra ficar top no celular */
-  .projetos {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
-
-  /* Card do projeto ocupa quase toda largura e tira padding excessivo */
-  .card {
-    max-width: 100%;
-    padding: 10px;
-  }
-
-  /* Imagem do card sem deslocamento e ocupa 100% */
+  /* Imagem do projeto ajustada ao centro e sem empurrar pro lado */
   .card img {
-    width: 100%;
     transform: none;
+    width: 90%;
   }
 
-  /* Container dos ícones tecnológicos também vira coluna e ajusta o gap */
-  .tech-icons {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
+  /* Imagem "quem sou eu" menor e centralizada */
+  .Lolo img {
+    max-width: 150px;
+    transform: none;
+    margin: 0 auto;
   }
 
-  /* Ícones tech menores no mobile */
-  .tech-icons img {
-    width: 50px;
-    height: 50px;
-  }
-
-  /* Container skills vira coluna, com padding menor */
-  .skills-container {
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    max-width: 100%;
-  }
-
-  /* Cada skill ocupa largura maior pra facilitar toque */
-  .skill-item {
-    width: 100%;
-    max-width: 300px;
-    margin: 10px auto;
-  }
-
-  /* Descrição skills menor e com padding lateral */
-  .skills-description {
-    font-size: 16px;
-    padding: 0 15px;
-    max-width: 100%;
-  }
-
-  /* Seção eu fica empilhada e centralizada */
+  /* Seção "Quem sou eu" empilhada em coluna */
   .eusobre {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 20px;
-    max-width: 100%;
-    margin: 20px auto;
-    padding: 0 20px;
   }
 
-  /* Imagem eu menor, sem deslocamento */
-  .Lolo img {
-    max-width: 150px;
-    width: 100%;
-    height: auto;
-    transform: none;
-    margin: 0 auto;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  }
-
-  /* Texto na seção eu menor */
+  /* Texto da bio um pouco menor */
   .eusobre p {
     font-size: 15px;
-    max-width: 100%;
   }
 
-  /* Botão formação e outros botoes com margem menor e sem translate */
-  .botaof,
+  /* Ícones de habilidades em coluna */
+  .skills-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Cada card de skill ocupa 100% */
+  .skill-item {
+    width: 100%;
+  }
+
+  /* Botões centralizados e com espaçamento menor */
   .buttonpj,
   .hab,
+  .botaof,
   .contat {
     margin-top: 30px;
     transform: none;
-    justify-content: center;
-  }
-
-  /* Formulário mais compacto */
-  .form {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 0 15px;
-  }
-
-  /* Título formulário menor e com margem adequada */
-  .form h1 {
-    margin-top: 10%;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-  }
-
-  /* Texto formulário menor */
-  .form p {
-    font-size: 15px;
-    padding: 0 10px;
   }
 
   /* Inputs e textarea ocupam largura total */
   .formulario input,
   .formulario textarea {
     max-width: 100%;
-    padding: 12px;
   }
 
-  /* Botão formulário ocupa mais espaço e é responsivo */
-  .formulario button {
-    width: 100%;
-    max-width: 300px;
-    padding: 12px;
+  /* Título do formulário com margem menor */
+  .form h1 {
+    margin-top: 15%;
+    font-size: 1.5rem;
+  }
+
+  /* Texto do formulário menor */
+  .form p {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  /* Texto da seção de habilidades ajustado */
+  .skills-description {
     font-size: 16px;
+    padding: 0 10px;
   }
 }
+
+  /* Aponta direto pro id errado 'projetcs' e corrige só o que precisar */
+  #projetcs {
+    /* Exemplo: ajustar margens, padding, posição */
+    margin-top: 20px; /* ou o que for necessário pra separar a imagem do título */
+  }
+
+  #projetcs h1 {
+    margin-top: 20px; /* subir o título pra longe da imagem */
+  }
+
+  .card img {
+    transform: none; /* já tinha mas reforça se precisar */
+    margin-bottom: 20px; /* pra dar espaço embaixo da imagem */
+  }
+
