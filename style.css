@@ -449,99 +449,50 @@ button:hover {
 /* 
    RESPONSIVIDADE PARA CELULAR
  */
-@media (max-width: 768px) {
-
-  /* Seções ocupam altura automática no mobile */
-  .section {
-    height: auto;
-    padding: 40px 20px;
-  }
-
-  /* Título principal menor e com menos contorno */
-  .inicial .hero-content h1 {
-    font-size: 2.8rem;
-    -webkit-text-stroke: 1px white;
-  }
-
-  /* Subtítulo menor */
-  .inicial .hero-content h2 {
-    font-size: 1.5rem;
-  }
-
-  /* Ícones das redes sociais menores */
-  .links img {
-    width: 40px;
-    height: 40px;
-    padding: 6px;
-  }
-
-  /* Imagem do projeto ajustada ao centro e sem empurrar pro lado */
-  .card img {
-    transform: none;
-    width: 90%;
-  }
-
-  /* Imagem "quem sou eu" menor e centralizada */
-  .Lolo img {
-    max-width: 150px;
-    transform: none;
-    margin: 0 auto;
-  }
-
-  /* Seção "Quem sou eu" empilhada em coluna */
-  .eusobre {
+ @media (max-width: 768px) {
+  .projetos {
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    margin-top: 40px;
+    padding: 0 10px;
+  }
+
+  .projetos h1 {
+    font-size: 24px;
     text-align: center;
   }
 
-  /* Texto da bio um pouco menor */
-  .eusobre p {
+  .section.projetos p {
     font-size: 15px;
+    margin: 10px 0;
   }
 
-  /* Ícones de habilidades em coluna */
-  .skills-container {
+  .card {
     flex-direction: column;
-    gap: 20px;
-  }
-
-  /* Cada card de skill ocupa 100% */
-  .skill-item {
+    align-items: center;
     width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
   }
 
-  /* Botões centralizados e com espaçamento menor */
-  .buttonpj,
-  .hab,
-  .botaof,
-  .contat {
-    margin-top: 30px;
+  .card img {
+    width: 100%;
+    height: auto;
     transform: none;
+    margin: 0 auto;
+    display: block;
   }
 
-  /* Inputs e textarea ocupam largura total */
-  .formulario input,
-  .formulario textarea {
-    max-width: 100%;
+  .tech-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
   }
 
-  /* Título do formulário com margem menor */
-  .form h1 {
-    margin-top: 15%;
-    font-size: 1.5rem;
-  }
-
-  /* Texto do formulário menor */
-  .form p {
-    font-size: 15px;
-    padding: 0 10px;
-  }
-
-  /* Texto da seção de habilidades ajustado */
-  .skills-description {
-    font-size: 16px;
-    padding: 0 10px;
+  .tech-icons img {
+    width: 40px;
+    height: 40px;
   }
 }
-
