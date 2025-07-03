@@ -550,9 +550,10 @@ button:hover {
     /* Exemplo: ajustar margens, padding, posição */
     margin-top: 20px; /* ou o que for necessário pra separar a imagem do título */
   }
+.card img {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: block;
+}
 
-  .card img {
-    transform: none; /* já tinha mas reforça se precisar */
-    margin-bottom: 20px; /* pra dar espaço embaixo da imagem */
-  }
 
