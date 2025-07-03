@@ -545,15 +545,17 @@ button:hover {
   }
 }
 
-  /* Aponta direto pro id errado 'projetcs' e corrige só o que precisar */
   #projetcs {
-    /* Exemplo: ajustar margens, padding, posição */
-    margin-top: 20px; /* ou o que for necessário pra separar a imagem do título */
+   
+    margin-top: 20px; 
+
+
+  .card img {
+    margin-top: 20px !important; /* força o valor menor */
+    margin-bottom: 10px;
+    display: block;
+    width: 90%; 
+    transform: none;
+
   }
-.card img {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  display: block;
-}
-
-
+  }
